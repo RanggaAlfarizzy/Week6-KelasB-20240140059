@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Etalase Produk</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <span class="brand">UMKM Hub</span>
+    <div class="nav-links">
+      <a href="index.html" class="active">Etalase</a>
+      <a href="form.html">Asisten Caption</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <header>
+      <h1>Etalase Produk</h1>
+      <p class="subtitle">Data produk diambil dari DummyJSON menggunakan Fetch API.</p>
+    </header>
+
+    <section class="toolbar" aria-label="Pencarian dan filter">
+      <div class="field">
+        <label for="searchInput">Cari Produk</label>
+        <input type="search" id="searchInput" placeholder="Ketik nama produk...">
+      </div>
+      <div class="field">
+        <label for="categorySelect">Kategori</label>
+        <select id="categorySelect">
+          <option value="all">Semua Kategori</option>
+        </select>
+      </div>
+    </section>
+
+    <p id="statusText" class="status" role="status" aria-live="polite">Menunggu data...</p>
+    <button type="button" id="retryBtn" class="btn secondary" hidden>Coba Lagi</button>
+
+    <section id="productList" class="grid" aria-label="Daftar produk"></section>
+  </main>
+
+  <footer class="footer">
+    <small>Week 6 · Pengembangan Aplikasi Web (TI-501) · Prodi Teknologi Informasi UMY</small>
+  </footer>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
